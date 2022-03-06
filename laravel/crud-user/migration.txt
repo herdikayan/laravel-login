@@ -1,0 +1,1 @@
+php artisan make:migration create_user_table --create=tb_user

@@ -1,0 +1,1 @@
+php artisan make:controller PostController --resource --model=Post
