@@ -35,13 +35,11 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 # Copy existing application directory contents to the working directory
 COPY . /var/www/html
-RUN cp .env.example.docker .env
 # Assign permissions of the working directory to the www-data user
 RUN chown -R www-data:www-data \
         /var/www/html/storage \
         /var/www/html/bootstrap/cache
-RUN composer update
 # Expose port 9000 and start php-fpm server (for FastCGI Process Manager)
-EXPOSE 9000 80
-CMD ["/bin/bash", "-c", "php-fpm;"]
-# CMD ["/bin/bash", "-c", "composer install;php artisan key:generate; php artisan migrate;php-fpm;"]
+EXPOSE 9000
+
+CMD ["/bin/bash", "-c", "cp .env.example.docker .env;composer install;php artisan key:generate;php artisan migrate;php-fpm;"]

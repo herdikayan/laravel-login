@@ -9,10 +9,11 @@
 
 ## Installation Instruction
 - run ```git clone https://github.com/herdikayan/laravel-login.git laravel-login```
-- Create a MySQL database for the project ```laravel_login```
-- From the projects root run ```cp .env.example .env```
-- Configure your ```.env``` file
-- Run ```composer update``` from the projects root folder
-- From the projects root folder run ```php artisan key:generate```
-- From the projects root folder run ```php artisan migrate```
-- Finish
+- checkout branch ```git checkout app-docker```
+- install docker in your system 
+- run ```docker-compose up --build -d```
+- type local host in browser, hit enter . it return 502 error
+- wait for some time (composer update, migrate is running inside the container after completed php-fpm will run), then you good to go :)
+- Thank you ;)
+- you can visit my account ```https://github.com/TryToLearnProgramming```
+
