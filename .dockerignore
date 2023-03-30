@@ -2,6 +2,6 @@
 .dockerignore
 php.dockerfile
 docker-compose.yaml
-# vendor
+vendor
 .env.example
 .env
