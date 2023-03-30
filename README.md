@@ -12,8 +12,8 @@
 - checkout branch ```git checkout app-docker```
 - install docker in your system 
 - run ```docker-compose up --build -d```
-- type local host in browser, hit enter . it return 502 error
-- wait for some time (composer update, migrate is running inside the container after completed php-fpm will run), then you good to go :)
+- type localhost in browser, hit enter . it will return 502 error
+- wait for some time (composer update, migrate is running inside the container, after completed php-fpm will run), then you good to go :)
 - Thank you ;)
 - you can visit my account ```https://github.com/TryToLearnProgramming```
 
