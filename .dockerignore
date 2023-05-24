@@ -1,0 +1,7 @@
+.git
+.dockerignore
+php.dockerfile
+docker-compose.yaml
+vendor
+.env.example
+.env
